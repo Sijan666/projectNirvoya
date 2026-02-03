@@ -59,7 +59,7 @@ const Header = () => {
         </Flex>
         <Flex
           className={
-            "gap-x-14 text-[#333333]/85 text-base font-medium justify-center"
+            "gap-x-14 text-[#333333]/85 text-base font-medium justify-center uppercase"
           }
         >
           <p className="cursor-pointer">Women's Fashion</p>
