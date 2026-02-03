@@ -17,7 +17,7 @@ const Banner = () => {
     return (
         <div className="pt-3 pb-[50px]">
             <Container>
-                <Flex className={'items-start!'}>
+                <Flex className={'items-start! justify-between'}>
                     {/* Left Side: Swiper */}
                     <div className="left w-[65%]">
                         <Swiper 
@@ -53,7 +53,7 @@ const Banner = () => {
                     </div>
                     {/* Left Side: Swiper */}
                     {/* Right Side Images */}
-                    <div className="right w-[35%]">
+                    <div className="right ">
                         <Flex className="flex-col justify-between h-full gap-y-5">
                             <div className="h-[48%]">
                                 <Images imgSrc={banner2} className="w-full h-full object-cover rounded-[20px] cursor-pointer"/>
