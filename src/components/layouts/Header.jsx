@@ -9,7 +9,7 @@ import { FaShoppingBasket } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <>
+    <div className="border-b-2 border-[#EFEEEE]">
       <Container>
         <Flex className="py-[33px] justify-between">
           <Images imgSrc={Logo} className={"cursor-pointer"} />
@@ -59,7 +59,7 @@ const Header = () => {
         </Flex>
         <Flex
           className={
-            "gap-x-14 text-[#333333]/85 text-base font-medium justify-center uppercase"
+            "gap-x-14 text-[#333333]/85 text-base font-medium justify-center uppercase mb-2.5"
           }
         >
           <p className="cursor-pointer">Women's Fashion</p>
@@ -71,7 +71,7 @@ const Header = () => {
           <p className="cursor-pointer">Food & Grocery</p>
         </Flex>
       </Container>
-    </>
+    </div>
   );
 };
 
