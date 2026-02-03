@@ -16,7 +16,11 @@ const Footer = () => {
         <Container>
           <div className="flex justify-between">
             <div className="">
-              <Images imgSrc={fLogo} />
+              <div className="w-[150px]">
+                <Link to={"/"}>
+                  <Images imgSrc={fLogo} />
+                </Link>
+              </div>
               <p className="text-[#333333]/80 text-[18px] font-Lato w-[390px] leading-7 pt-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
