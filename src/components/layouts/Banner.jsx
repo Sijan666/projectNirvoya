@@ -17,7 +17,7 @@ const Banner = () => {
     return (
         <div className="pt-3 pb-[50px]">
             <Container>
-                <Flex className={'items-start! justify-between'}>
+                <Flex className={'justify-between'}>
                     {/* Left Side: Swiper */}
                     <div className="left w-[65%]">
                         <Swiper 
