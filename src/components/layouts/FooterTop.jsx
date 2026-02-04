@@ -9,7 +9,7 @@ import Container from "../Container";
 const FooterTop = () => {
   return (
     <>
-      <div className="border-t-2 border-[#bbbbbb] mt-10">
+      <div className=" mt-10">
        <Container>
          <div className="flex items-center justify-between py-10">
           <Images imgSrc={Footertop1} />
