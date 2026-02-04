@@ -43,7 +43,7 @@ const Banner = () => {
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to={"/"}>
+                <Link to={"/productDetails"}>
                   <Images
                     imgSrc={banner4}
                     className="w-full h-full object-cover rounded-[20px] cursor-pointer"
@@ -51,7 +51,7 @@ const Banner = () => {
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to={"/"}>
+                <Link to={"/productDetails"}>
                   <Images
                     imgSrc={banner5}
                     className="w-full h-full object-cover rounded-[20px] cursor-pointer"
