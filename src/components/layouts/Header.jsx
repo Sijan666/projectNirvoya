@@ -67,7 +67,7 @@ const Header = () => {
             }
           >
             <p
-              className={`cursor-pointer pb-2 duration-300 ${
+              className={`cursor-pointer duration-300 ${
                 show
                   ? "text-[#0198E9] border-b-2 border-[#0198E9]"
                   : "text-[#333333]/85"
@@ -95,7 +95,7 @@ const Header = () => {
       {/* Women's Fashion Items  */}
       {show && (
         <Container
-          className={"py-7.5 px-18 bg-white absolute left-0 right-0 z-20"}
+          className={"py-7.5 px-18 bg-gray-100 absolute left-0 right-0 z-20"}
         >
           <Flex className={"justify-between items-start"}>
             {/* Flex One start  */}
