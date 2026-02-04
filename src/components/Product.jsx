@@ -1,7 +1,8 @@
+import { useState } from "react"; // 1. useState import thakte hobe
 import Badge from "./Badge";
 import Images from "./Images";
 import Flex from "./Flex"; 
-import { FaBasketShopping } from "react-icons/fa6";
+import { FaBasketShopping, FaHeart } from "react-icons/fa6";
 
 const Product = ({
   productImg,
@@ -11,26 +12,29 @@ const Product = ({
   productPrice,
   className, 
 }) => {
+  const [isLiked, setIsLiked] = useState(false);
+  const handleLike = () => {
+    setIsLiked(!isLiked);
+  };
   return (
     <div> 
       <div className="bg-white px-[9px] pt-[9px] pb-[15px] border-2 border-[#E9E9E9] rounded-[10px] inline-block relative">
         <Images className={'cursor-pointer'} imgSrc={productImg} />
-        
-        <Badge
-           className={"absolute top-[9px] left-[9px]"}
-          badgeText={badgeText}
-        />
-        
+        <Badge className={"absolute top-[9px] left-[9px]"} badgeText={badgeText}/>
+        <FaHeart 
+          onClick={handleLike}
+          className={`absolute top-[25px] right-[25px] text-[25px] cursor-pointer transition-all duration-300 ${isLiked ? 'text-red-500' : 'text-gray-300'}`} />
         <div className="mt-4">
-          <div
-            className={`flex space-x-0.5 text-base text-[#FAC96B] cursor-pointer ${className}`}
-          >
-            {productRating}
+          <div className="flex gap-x-2">
+            <div className={`flex space-x-0.5 text-base text-[#FAC96B] cursor-pointer ${className}`}>
+              {productRating}
+            </div>
+            <p className="text-[12px]">(0)</p>
           </div>
-          <h3 className="w-[294px] py-[10px] font-Poppins font-normal text-[18px] text-[#383838] leading-[150%]">
+          <h3 className="w-[294px] py-2.5 font-Poppins font-normal text-[18px] text-[#383838] leading-[150%]">
             {productTitle}
           </h3>        
-          <Flex className="space-x-[195px]">
+          <Flex className="justify-between items-center">
             <p className="font-Poppins font-medium text-[22px] text-[#0970CD]">
               {productPrice}
             </p>
