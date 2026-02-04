@@ -2,6 +2,9 @@ import React from "react";
 import Container from "../Container";
 import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Images from "../Images";
+import category1 from '../../assets/category1.png'
+
 
 const Category = () => {
   return (
@@ -16,7 +19,8 @@ const Category = () => {
             className="flex items-center justify-between shadow-[0_0_12px_rgba(0,0,0,0.08)] rounded-md p-4"
           >
             <div className="flex items-center gap-x-2.5">
-              <img src="/src/assets/category1.png" alt="/category1.png" />
+              {/* <img src="/src/assets/category1.png" alt="/category1.png" /> */}
+              <Images imgSrc={category1}/>
               <span className="text-[#394146] text-base">
                 Health & Household
               </span>
