@@ -16,7 +16,9 @@ const Header = () => {
       <div className="border-b-2 border-[#EFEEEE]">
         <Container>
           <Flex className="py-[33px] justify-between">
-            <Images imgSrc={Logo} className={"cursor-pointer"} />
+            <Link to={'/'}>
+              <Images imgSrc={Logo} className={"cursor-pointer"} />
+            </Link>
             <Flex>
               <div className="bg-[#F6F6F6] border-2 border-[#F1F1F1] border-r-0 rounded-bl-[5px] rounded-tl-[5px] w-[715px]">
                 <input
