@@ -6,14 +6,14 @@ import FeaturedProduct from '../layouts/FeaturedProduct'
 
 
 const Home = () => {
-    return (
-        <>
-        <Banner/>
-        <Category/>
-        <FlashDeals/>
-        <FeaturedProduct/>
-        </>
-    )
+        return (
+                <>
+                <Banner/>
+                <Category/>
+                <FlashDeals/>
+                <FeaturedProduct/>
+                </>
+        )
 }
 
 export default Home
