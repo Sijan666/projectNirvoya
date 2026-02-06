@@ -23,7 +23,10 @@ import Flex from "../Flex";
 import Review from '../../assets/Review.png'
 import ratings from '../../assets/ratings.png'
 import Button from "../Button";
-
+import r1 from '../../assets/r1.png'
+import r2 from '../../assets/r2.png'
+import r3 from '../../assets/r3.png'
+import r4 from '../../assets/r4.png'
 
 const ProductDetails = () => {
 
@@ -239,6 +242,14 @@ const ProductDetails = () => {
             </div>
           </Flex>
           <h4 className="text-[#333333] text-[24px] font-medium border-b pb-5 border-[#F1F1F1]">Reviews (4)</h4>
+          <div className="pt-5">
+            <div className="flex flex-col gap-y-7.5">
+              <Images imgSrc={r1}/>
+              <Images imgSrc={r2}/>
+              <Images imgSrc={r3}/>
+              <Images imgSrc={r4}/>
+            </div>
+          </div>
         </div>
       </Container>
     </div>
