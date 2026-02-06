@@ -27,6 +27,8 @@ import r1 from '../../assets/r1.png'
 import r2 from '../../assets/r2.png'
 import r3 from '../../assets/r3.png'
 import r4 from '../../assets/r4.png'
+import rate from '../../assets/rate.png'
+
 
 const ProductDetails = () => {
 
@@ -254,6 +256,28 @@ const ProductDetails = () => {
             </div>
           </div>
           {/* review part */}
+          {/* input part */}
+          <div className="input pt-[70px]">
+            <h4 className="text-[24px] font-semibold text-[#383838]">Add Your Review</h4>
+            <p className="text-[#A7A7A7] text-[18px] pt-4 pb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
+            <div className="name pb-8">
+              <p className="pb-4 text-[18px] text-[#383838]">Name *</p>
+              <input type="text" name="" className="w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5 "/>
+            </div>
+            <div className="email pb-8">
+              <p className="pb-4 text-[18px] text-[#383838]">Email *</p>
+              <input type="email" name="" className="w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5 "/>
+            </div>
+            <div className="msg pb-10">
+              <p className="pb-4 text-[18px] text-[#383838]">Review *</p>
+              <textarea name="" id="" rows={5} cols={5} className="w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5"></textarea>
+            </div>
+            <Images imgSrc={rate}/>
+            <div className="btn pt-10">
+              <Button btnText={'Submit'} className={'text-[#FAFAFA] text-[18px] px-[57.5px] py-[16.5px]'}/>
+            </div>
+          </div>
+          {/* input part */}
         </div>
       </Container>
     </div>
