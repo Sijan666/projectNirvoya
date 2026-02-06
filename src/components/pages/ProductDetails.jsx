@@ -227,6 +227,7 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="mt-7.5 pt-7.5 px-12 pb-15 bg-white">
+          {/* ratings part */}
           <Flex className={'gap-x-[75px] pb-[35px]'}>
             <div className="">
               <h4 className="text-[#3D3D3F] font-medium text-[20px] pb-2.5">Customer reviews</h4>
@@ -241,6 +242,8 @@ const ProductDetails = () => {
               <Button btnText={'Write a Review'} className={'px-12 py-2.5 text-white'}/>
             </div>
           </Flex>
+          {/* ratings part */}
+          {/* review part */}
           <h4 className="text-[#333333] text-[24px] font-medium border-b pb-5 border-[#F1F1F1]">Reviews (4)</h4>
           <div className="pt-5">
             <div className="flex flex-col gap-y-7.5">
@@ -250,6 +253,7 @@ const ProductDetails = () => {
               <Images imgSrc={r4}/>
             </div>
           </div>
+          {/* review part */}
         </div>
       </Container>
     </div>
