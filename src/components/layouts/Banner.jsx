@@ -16,9 +16,9 @@ const Banner = () => {
   return (
     <div className="pt-3 pb-[50px]">
       <Container>
-        <Flex className={"justify-between"}>
+        <Flex className={"lg:justify-between flex-col lg:flex-row gap-y-5"}>
           {/* Left Side: Swiper */}
-          <div className="left w-[65%]">
+          <div className="left lg:w-[65%] w-full">
             <Swiper
               slidesPerView={1}
               loop={true}
@@ -38,7 +38,7 @@ const Banner = () => {
                 <Link to={"/productDetails"}>
                   <Images
                     imgSrc={banner1}
-                    className="w-full h-full object-cover rounded-[20px] cursor-pointer"
+                    className="w-full h-full object-cover rounded-4xl cursor-pointer"
                   />
                 </Link>
               </SwiperSlide>
@@ -46,7 +46,7 @@ const Banner = () => {
                 <Link to={"/productDetails"}>
                   <Images
                     imgSrc={banner4}
-                    className="w-full h-full object-cover rounded-[20px] cursor-pointer"
+                    className="w-full h-full object-cover rounded-4xl cursor-pointer"
                   />
                 </Link>
               </SwiperSlide>
@@ -54,7 +54,7 @@ const Banner = () => {
                 <Link to={"/productDetails"}>
                   <Images
                     imgSrc={banner5}
-                    className="w-full h-full object-cover rounded-[20px] cursor-pointer"
+                    className="w-full h-full object-cover rounded-4xl cursor-pointer"
                   />
                 </Link>
               </SwiperSlide>
@@ -67,13 +67,13 @@ const Banner = () => {
               <div className="h-[48%]">
                 <Images
                   imgSrc={banner2}
-                  className="w-full h-full object-cover rounded-[20px] cursor-pointer"
+                  className="w-full h-full object-cover rounded-4xl cursor-pointer"
                 />
               </div>
               <div className="h-[48%]">
                 <Images
                   imgSrc={banner3}
-                  className="w-full h-full object-cover rounded-[20px] cursor-pointer"
+                  className="w-full h-full object-cover rounded-4xl cursor-pointer"
                 />
               </div>
             </Flex>
