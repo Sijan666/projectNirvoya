@@ -11,12 +11,12 @@ import paymentApps from "/src/assets/fPaymentApps.png";
 
 const Footer = () => {
   return (
-    <footer className="">
+    <footer className="w-full">
       <div className="py-12 border border-[#ececec]">
         <Container>
-          <div className="flex justify-between">
-            <div className="">
-              <div className="w-[150px]">
+          <div className="flex lg:flex-row flex-col gap-y-4 lg:justify-between">
+            <div className="pb-10 lg:pb-0">
+              <div className="lg:w-[150px]">
                 <Link to={"/"}>
                   <Images imgSrc={fLogo} />
                 </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
               </div>
             </div>
             {/* QUICK LINKS Start  */}
-            <div className="">
+            <div className="pb-10 lg:pb-0">
               <h4 className="text-[#333333] text-[20px] font-medium">
                 QUICK LINKS
               </h4>
@@ -64,7 +64,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* CUSTOMER AREA start  */}
-            <div className="">
+            <div className="pb-10 lg:pb-0">
               <h4 className="text-[#333333] text-[20px] font-medium">
                 CUSTOMER AREA
               </h4>
@@ -97,7 +97,6 @@ const Footer = () => {
               </p>
               <div className="flex items-center gap-x-10">
                 <Images imgSrc={Headphone} />
-
                 <div className="">
                   <h5 className="text-[#333333] text-[18px]">
                     Have any question?
@@ -112,19 +111,21 @@ const Footer = () => {
         </Container>
       </div>
       {/* Bottom items  */}
-      <Container>
-        <div className="mt-10 flex items-center justify-between">
-          <p className="text-[#757575] text-base ">
-            Projectnirvoya - © 2021 All Rights Reserved
-          </p>
-          <div className="flex items-center gap-x-4">
-            <h4 className="text-[#0198E9]/80 text-[18px] font-medium ">
-              Pay With
-            </h4>
-            <Images imgSrc={paymentApps} />
+      <div className="w-full">
+        <Container>
+          <div className="mt-10 flex lg:flex-row flex-col items-center lg:justify-between gap-y-4">
+            <p className="text-[#757575] text-base ">
+              Projectnirvoya - © 2021 All Rights Reserved
+            </p>
+            <div className="flex items-center gap-x-4 lg:flex-row flex-col gap-y-4">
+              <h4 className="text-[#0198E9]/80 text-[18px] font-medium ">
+                Pay With
+              </h4>
+              <Images imgSrc={paymentApps} />
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </footer>
   );
 };
