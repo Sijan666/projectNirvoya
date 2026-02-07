@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from '../layouts/Banner'
 import Category from '../layouts/Category'
 import FlashDeals from '../layouts/FlashDeals'
-// import FeaturedProduct from '../layouts/FeaturedProduct'
+import FeaturedProduct from '../layouts/FeaturedProduct'
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
         <Banner/>
         <Category/>
         <FlashDeals/>
-        {/* <FeaturedProduct/> */}
+        <FeaturedProduct/>
         </>
         )
 }

@@ -26,71 +26,79 @@ const FlashDeals = () => {
         </div>
         {/* title part */}
         {/* product part  */}
-          <Flex className={'lg:justify-between flex-col lg:flex-row gap-y-5'}>
+          <Flex className={'flex-wrap gap-y-5 justify-between px-2'}>
             {/* product 1 */}
-            <Product
-              productImg={women}
-              badgeText={"-23% OFF"}
-              productRating={
-                <>
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar className="text-[#D3D3D3]"/> 
-                </>
-              }
-              productTitle={"Headrest Executive Mesh Office Chair set"}
-              productPrice={"৳10500"}
-            />
+            <div className="w-[48%] lg:w-[24%]">
+              <Product
+                productImg={women}
+                badgeText={"-23% OFF"}
+                productRating={
+                  <>
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar className="text-[#D3D3D3]"/> 
+                  </>
+                }
+                productTitle={"Headrest Executive Mesh Office Chair set"}
+                productPrice={"৳10500"}
+                />
+              </div>
             {/* product 2 */}
-            <Product
-              productImg={w2}
-              badgeText={"-23% OFF"}
-              productRating={
-                <>
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar className="text-[#D3D3D3]"/> 
-                </>
-              }
-              productTitle={"Women fashion dress set"}
-              productPrice={"৳1000"}
-            />
+            <div className="w-[48%] lg:w-[24%]">
+              <Product
+                productImg={w2}
+                badgeText={"-23% OFF"}
+                productRating={
+                  <>
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar className="text-[#D3D3D3]"/> 
+                  </>
+                }
+                productTitle={"Women fashion dress set"}
+                productPrice={"৳1000"}
+                />
+                </div>
             {/* product 3 */}
-            <Product
-              productImg={w3}
-              badgeText={"-23% OFF"}
-              productRating={
-                <>
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar className="text-[#D3D3D3]"/> 
-                </>
-              }
-              productTitle={"Headrest Executive Mesh Office Chair set"}
-              productPrice={"৳5000"}
-            />
+            <div className="w-[48%] lg:w-[24%]">
+              <Product
+                productImg={w3}
+                badgeText={"-23% OFF"}
+                productRating={
+                  <>
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar className="text-[#D3D3D3]"/> 
+                  </>
+                }
+                productTitle={"Headrest Executive Mesh Office Chair set"}
+                productPrice={"৳5000"}
+                />
+                </div>
             {/* product 4 */}
-            <Product
-              productImg={w4}
-              badgeText={"-23% OFF"}
-              productRating={
-                <>
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar /> 
-                  <IoStar className="text-[#D3D3D3]"/> 
-                </>
-              }
-              productTitle={"Women black dress and red hat collections"}
-              productPrice={"৳1000.00"}
-            />
+            <div className="w-[48%] lg:w-[24%]">
+              <Product
+                productImg={w4}
+                badgeText={"-23% OFF"}
+                productRating={
+                  <>
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar /> 
+                    <IoStar className="text-[#D3D3D3]"/> 
+                  </>
+                }
+                productTitle={"Women black dress and red hat collections"}
+                productPrice={"৳1000.00"}
+                />
+              </div>
           </Flex>
           {/* product part  */}
       </Container>
