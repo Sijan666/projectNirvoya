@@ -17,7 +17,7 @@ import f12 from '../../assets/f12.png'
 
 const Allproducts = () => {
 
-    const [priceRange, setPriceRange] = useState([75]);
+    const [priceRange, setPriceRange] = useState([50]);
     const currentPrice = priceRange[0] * 25;
 
     return (
@@ -26,8 +26,9 @@ const Allproducts = () => {
             <div className="bg-[#FAFAFA] pt-[43px] pb-12.5 w-[420px] lg:w-full">
                 <Container className={'lg:w-[1405px] w-[395px]'}>
                     <Flex className={'gap-x-13 items-start!'}>
-                        {/* left side start */}
-                        <div className="leftBar w-[20%] py-[25px] bg-white px-5">
+                        {/* left side bar start */}
+                        <div className="leftBar w-[20%] py-[25px] bg-white px-5 hidden lg:block">
+                            {/* left menu start */}
                             <div className="pb-[18px] border-b border-[#F4F4F4]">
                                 <h4 className='text-[#3D3D3F] text-[18px] font-medium'>Related Categories</h4>
                                 <p className='text-[#757575] text-base py-1 hover:text-[#0198E9] cursor-pointer duration-300'>Men’s fashion</p>
@@ -40,14 +41,16 @@ const Allproducts = () => {
                                     </ul>
                                 </div>
                             </div>
+                            {/* left menu end */}
                             <div className="pt-5">
+                                {/* slider from shad cn */}
                                 <div className="flex justify-between items-center! cursor-pointer pb-8">
                                     <h4 className='text-[#383838] font-medium text-[18px]'>Filter by Price</h4>
                                     <MdOutlineKeyboardArrowDown/>
                                 </div>
                                 <div className="range">
                                     <Slider 
-                                        defaultValue={[75]}
+                                        defaultValue={[50]}
                                         max={100}
                                         step={1}
                                         onValueChange={(value) => setPriceRange(value)}
@@ -62,8 +65,10 @@ const Allproducts = () => {
                                         </p>
                                     </Flex>
                                 </div>
+                                {/* slider from shad cn */}
                             </div>
                             <div className="pt-5">
+                                {/* rating filter */}
                                 <div className="flex justify-between items-center! cursor-pointer pb-8">
                                     <h4 className='text-[#383838] font-medium text-[18px]'>Filter by Rating</h4>
                                     <MdOutlineKeyboardArrowDown/>
@@ -100,17 +105,18 @@ const Allproducts = () => {
                                         <IoMdStar className='text-[#FFB340]'/>
                                     </div>
                                 </div>
+                                {/* rating filter */}
                             </div>
                         </div>
-                        {/* left side end */}
+                        {/* left side bar end */}
                         {/* right side start */}
                         <div className="rightSide w-full">
-                            <Flex className="justify-between">
+                            <Flex className="justify-between gap-x-5 lg:gap-x-0">
                                 <div className="left">
-                                    <h4 className='text-[18px] text-[#424241]/50 font-medium'>Showing <span className='text-[#424241]'> 20 </span> of <span className='text-[#424241]'>160</span> product</h4>
+                                    <h4 className='lg:text-[18px] text-sm text-[#424241]/50 font-medium'>Showing <span className='text-[#424241]'> 20 </span> of <span className='text-[#424241]'>160</span> product</h4>
                                 </div>
-                                <div className="right flex gap-x-2 items-center">
-                                    <h4 className='text-[18px] text-[#424241]/50 font-medium'>Sort by:</h4>
+                                <div className="right flex gap-x-1 lg:gap-x-2 items-center">
+                                    <h4 className='lg:text-[18px] text-sm text-[#424241]/50 font-medium'>Sort by:</h4>
                                     <select className='px-4 py-1 text-[#424241] border border-[#F0F0F0] outline-none w-40 appearance-none text-[18px]'>
                                         <option value="">Newest Items</option>
                                         <option value="">Featured</option>
@@ -119,9 +125,11 @@ const Allproducts = () => {
                                     </select>
                                 </div>
                             </Flex>
-                            {/* first line start */}
+                            {/* product start */}
                             <div className="pt-6">
-                                <Flex className={'justify-between'}>
+                                <Flex className={'flex-wrap gap-y-5 justify-between px-2'}>
+                                    {/* product 1 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product 
                                     productImg={f7}
                                     badgeText={""}
@@ -137,6 +145,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳5000"}
                                     />
+                                    </div>
+                                    {/* product 2 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={w4}
                                     badgeText={""}
@@ -152,6 +163,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000.00"}
                                     />
+                                    </div>
+                                    {/* product 3 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={f6}
                                     badgeText={""}
@@ -167,12 +181,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000"}
                                     />
-                                </Flex>
-                            </div>
-                            {/* first line end */}
-                            {/* second line start */}
-                            <div className="pt-6">
-                                <Flex className={'justify-between'}>
+                                    </div>
+                                    {/* product 4 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product 
                                     productImg={w2}
                                     badgeText={""}
@@ -188,6 +199,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000"}
                                     />
+                                    </div>
+                                    {/* product 5 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={w3}
                                     badgeText={""}
@@ -203,6 +217,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳5000"}
                                     />
+                                    </div>
+                                    {/* product 6 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={f12}
                                     badgeText={""}
@@ -218,12 +235,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000.00"}
                                     />
-                                </Flex>
-                            </div>
-                            {/* second line end */}
-                            {/* third line start */}
-                            <div className="pt-6">
-                                <Flex className={'justify-between'}>
+                                    </div>
+                                    {/* product 7 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product 
                                     productImg={f7}
                                     badgeText={""}
@@ -239,6 +253,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳5000"}
                                     />
+                                    </div>
+                                    {/* product 8 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={w4}
                                     badgeText={""}
@@ -254,6 +271,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000.00"}
                                     />
+                                    </div>
+                                    {/* product 9 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={f6}
                                     badgeText={""}
@@ -269,12 +289,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000"}
                                     />
-                                </Flex>
-                            </div>
-                            {/* third line end */}
-                            {/* fourth line start */}
-                            <div className="pt-6">
-                                <Flex className={'justify-between'}>
+                                    </div>
+                                    {/* product 10 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product 
                                     productImg={w2}
                                     badgeText={""}
@@ -290,6 +307,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000"}
                                     />
+                                    </div>
+                                    {/* product 11 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={w3}
                                     badgeText={""}
@@ -305,6 +325,9 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳5000"}
                                     />
+                                    </div>
+                                    {/* product 12 */}
+                                    <div className="w-[48%] lg:w-[33%]">
                                     <Product
                                     productImg={f12}
                                     badgeText={""}
@@ -320,10 +343,11 @@ const Allproducts = () => {
                                     productTitle={"Headrest Executive Mesh Office Chair set"}
                                     productPrice={"৳1000.00"}
                                     />
+                                    </div>
                                 </Flex>
                             </div>
-                            {/* fourth line end */}
-                        </div>
+                            {/* productend */}
+ 25                     </div>
                         {/* right side end */}
                     </Flex>
                 </Container>
