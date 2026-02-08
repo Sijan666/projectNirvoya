@@ -27,7 +27,7 @@ const Allproducts = () => {
                 <Container className={'lg:w-[1405px] w-[395px]'}>
                     <Flex className={'gap-x-13 items-start!'}>
                         {/* left side start */}
-                        <div className="leftBar w-[20%] py-[25px] bg-white px-5">
+                        <div className="leftBar w-[20%] py-[25px] bg-white px-5 hidden lg:block">
                             <div className="pb-[18px] border-b border-[#F4F4F4]">
                                 <h4 className='text-[#3D3D3F] text-[18px] font-medium'>Related Categories</h4>
                                 <p className='text-[#757575] text-base py-1 hover:text-[#0198E9] cursor-pointer duration-300'>Men’s fashion</p>
@@ -107,11 +107,11 @@ const Allproducts = () => {
                         <div className="rightSide w-full">
                             <Flex className="justify-between">
                                 <div className="left">
-                                    <h4 className='text-[18px] text-[#424241]/50 font-medium'>Showing <span className='text-[#424241]'> 20 </span> of <span className='text-[#424241]'>160</span> product</h4>
+                                    <h4 className='lg:text-[18px] text-sm text-[#424241]/50 font-medium'>Showing <span className='text-[#424241]'> 20 </span> of <span className='text-[#424241]'>160</span> product</h4>
                                 </div>
-                                <div className="right flex gap-x-2 items-center">
-                                    <h4 className='text-[18px] text-[#424241]/50 font-medium'>Sort by:</h4>
-                                    <select className='px-4 py-1 text-[#424241] border border-[#F0F0F0] outline-none w-40 appearance-none text-[18px]'>
+                                <div className="right flex lg:gap-x-2 gap-x-1 items-center">
+                                    <h4 className='lg:text-[18px] text-sm text-[#424241]/50 font-medium'>Sort by:</h4>
+                                    <select className='px-4 py-1 text-[#424241] border border-[#F0F0F0] outline-none lg:w-40 w-30 appearance-none text-[18px]'>
                                         <option value="">Newest Items</option>
                                         <option value="">Featured</option>
                                         <option value="">Best Sellers</option>
@@ -121,208 +121,226 @@ const Allproducts = () => {
                             </Flex>
                             {/* first line start */}
                             <div className="pt-6">
-                                <Flex className={'justify-between'}>
-                                    <Product 
-                                    productImg={f7}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳5000"}
-                                    />
-                                    <Product
-                                    productImg={w4}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000.00"}
-                                    />
-                                    <Product
-                                    productImg={f6}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000"}
-                                    />
+                                <Flex className={' flex-wrap gap-y-5 justify-between px-2'}>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product 
+                                        productImg={f7}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳5000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={w4}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000.00"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={f6}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product 
+                                        productImg={w2}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={w3}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳5000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={f12}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000.00"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product 
+                                        productImg={f7}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳5000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={w4}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000.00"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={f6}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product 
+                                        productImg={w2}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={w3}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳5000"}
+                                        />
+                                    </div>
+                                    {/* product */}
+                                    <div className="w-[48%] lg:w-[33%]">
+                                        <Product
+                                        productImg={f12}
+                                        badgeText={""}
+                                        productRating={
+                                            <>
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar /> 
+                                            <IoStar className="text-[#D3D3D3]"/> 
+                                            </>
+                                        }
+                                        productTitle={"Headrest Executive Mesh Office Chair set"}
+                                        productPrice={"৳1000.00"}
+                                        />
+                                    </div>
                                 </Flex>
                             </div>
                             {/* first line end */}
-                            {/* second line start */}
-                            <div className="pt-6">
-                                <Flex className={'justify-between'}>
-                                    <Product 
-                                    productImg={w2}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000"}
-                                    />
-                                    <Product
-                                    productImg={w3}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳5000"}
-                                    />
-                                    <Product
-                                    productImg={f12}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000.00"}
-                                    />
-                                </Flex>
-                            </div>
-                            {/* second line end */}
-                            {/* third line start */}
-                            <div className="pt-6">
-                                <Flex className={'justify-between'}>
-                                    <Product 
-                                    productImg={f7}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳5000"}
-                                    />
-                                    <Product
-                                    productImg={w4}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000.00"}
-                                    />
-                                    <Product
-                                    productImg={f6}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000"}
-                                    />
-                                </Flex>
-                            </div>
-                            {/* third line end */}
-                            {/* fourth line start */}
-                            <div className="pt-6">
-                                <Flex className={'justify-between'}>
-                                    <Product 
-                                    productImg={w2}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000"}
-                                    />
-                                    <Product
-                                    productImg={w3}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳5000"}
-                                    />
-                                    <Product
-                                    productImg={f12}
-                                    badgeText={""}
-                                    productRating={
-                                        <>
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar /> 
-                                        <IoStar className="text-[#D3D3D3]"/> 
-                                        </>
-                                    }
-                                    productTitle={"Headrest Executive Mesh Office Chair set"}
-                                    productPrice={"৳1000.00"}
-                                    />
-                                </Flex>
-                            </div>
-                            {/* fourth line end */}
                         </div>
                         {/* right side end */}
                     </Flex>
