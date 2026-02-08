@@ -6,8 +6,8 @@
 
 @theme {
     --font-Poppins: "Poppins", sans-serif;
-    --font-Lato: "Lato", sans-serif;
     /* --shadow-newMade: 0 28px 30px rgba(99, 122, 166, 0.05); */
+    --shadow-newMade: 0 0 12px rgba(0, 0, 0, 0.08);
 }
 
 .swiper-pagination {
@@ -150,32 +150,29 @@
     }
 }
 
-/* স্লাইডারের মেইন কন্টেইনার (Track) */
 .custom-range-slider .relative {
-  height: 6px !important; /* [&_[data-orientation=horizontal]]:h-1.5 */
-  background-color: #d1d5db !important; /* [&_.relative]:bg-gray-300 */
+  height: 6px !important; 
+  background-color: #d1d5db !important; 
   border-radius: 9999px;
 }
 
-/* স্লাইডারের সিলেক্টেড অংশ (Range) */
+
 .custom-range-slider .absolute {
-  background-color: #0095f6 !important; /* [&_.absolute]:bg-[#0095f6] */
+  background-color: #0095f6 !important;
 }
 
-/* গোল বাটনটি (Thumb) */
 .custom-range-slider [role="slider"] {
-  height: 24px !important; /* [&_[role=slider]]:h-6 */
-  width: 24px !important; /* [&_[role=slider]]:w-6 */
-  background-color: white !important; /* [&_[role=slider]]:bg-white */
-  border-radius: 9999px !important; /* [&_[role=slider]]:rounded-full */
-  border: none !important; /* [&_[role=slider]]:border-none */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important; /* [&_[role=slider]]:shadow-lg */
+  height: 24px !important; 
+  width: 24px !important; 
+  background-color: white !important; 
+  border-radius: 9999px !important;
+  border: none !important; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important; 
   cursor: pointer;
   transition: box-shadow 0.2s;
 }
 
-/* ফোকাস করলে যে রিং আসবে */
 .custom-range-slider [role="slider"]:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #60a5fa, 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important; /* [&_[role=slider]]:focus:ring-2 */
+  box-shadow: 0 0 0 2px #60a5fa, 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important; 
 }
