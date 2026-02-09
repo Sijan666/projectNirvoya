@@ -30,7 +30,7 @@ const FeaturedProduct = () => {
 
           {/* Product 1*/}
           <div className="flex gap-x-6">
-            {featuredProductOne.map((item) => (
+            {featuredProductOne?.map((item) => (
               <Product
                 key={item?.id}
                 className={"w-[48%] lg:w-[24%]"}

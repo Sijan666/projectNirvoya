@@ -40,6 +40,7 @@ export const featuredProductOne = [
     price: "৳1000.00",
   },
 ];
+
 export const featuredProductTwo = [
   {
     id: 5,
@@ -117,6 +118,48 @@ export const featuredProductFor = [
     id: 15,
     productTitle: "Headrest Executive Mesh Office Chair set",
     productImage: f16,
+    price: "৳1000.00",
+  },
+];
+
+export const allProductOne = [
+  {
+    id: 1,
+    productTitle: "Headrest Executive Mesh Office Chair set",
+    productImage: f7,
+    price: "৳5000",
+  },
+  {
+    id: 2,
+    productTitle: "Women black dress and red hat collections",
+    productImage: w4,
+    price: "৳1000.00",
+  },
+  {
+    id: 3,
+    productTitle: "Women fashion dress set",
+    productImage: f6,
+    price: "৳1000",
+  },
+];
+
+export const allProductTwo = [
+  {
+    id: 1,
+    productTitle: "Women fashion dress set",
+    productImage: w2,
+    price: "৳1000",
+  },
+  {
+    id: 2,
+    productTitle: "Headrest Executive Mesh Office Chair set",
+    productImage: w3,
+    price: "৳5000",
+  },
+  {
+    id: 3,
+    productTitle: "Women black dress and red hat collections",
+    productImage: f12,
     price: "৳1000.00",
   },
 ];
