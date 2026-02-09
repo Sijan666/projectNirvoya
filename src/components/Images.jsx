@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Images = ({ imgSrc, className }) => {
+const Images = ({ imgSrc, className, loading = "lazy", fetchPriority = "auto" }) => {
     return (
         <img 
-            className={`${className}`} 
+            className={`${className ?? ""}`} 
             src={imgSrc} 
             alt="product-img" 
-            loading = "lazy"
+            loading={loading} 
+            fetchPriority={fetchPriority}
         />
     )
 }

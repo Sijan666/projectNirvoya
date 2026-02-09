@@ -12,10 +12,10 @@ const FooterTop = () => {
       <div className=" mt-10 w-[420px] lg:w-full">
         <Container className={'lg:w-[1405px] w-[395px]'}>
           <div className="flex lg:items-center lg:justify-between py-10 flex-col lg:flex-row gap-y-5 items-start">
-            <Images imgSrc={Footertop1} />
-            <Images imgSrc={Footertop2} />
-            <Images imgSrc={Footertop3} />
-            <Images imgSrc={Footertop4} />
+            <Images imgSrc={Footertop1} className={''}/>
+            <Images imgSrc={Footertop2} className={''}/>
+            <Images imgSrc={Footertop3} className={''}/>
+            <Images imgSrc={Footertop4} className={''}/>
           </div>
         </Container>
       </div>
