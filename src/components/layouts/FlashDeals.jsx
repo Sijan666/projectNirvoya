@@ -24,11 +24,11 @@ const FlashDeals = () => {
 
         {/* Dynamic Product List */}
         <Flex className={'flex-wrap gap-y-5 justify-between px-2'}>
-          {products.map((item) => (
-            <div key={item.id} className="w-[48%] lg:w-[24%]">
+          {products?.map((item) => (
+            <div key={item?.id} className="w-[48%] lg:w-[24%]">
               <Product
-                productImg={item.productImg}
-                badgeText={item.discount}
+                productImg={item?.productImg}
+                badgeText={item?.discount}
                 productRating={
                   <>
                     <IoStar /> 
@@ -38,8 +38,8 @@ const FlashDeals = () => {
                     <IoStar className="text-[#D3D3D3]"/> 
                   </>
                 }
-                productTitle={item.productTitle}
-                productPrice={item.productPrice}
+                productTitle={item?.productTitle}
+                productPrice={item?.productPrice}
               />
             </div>
           ))}
