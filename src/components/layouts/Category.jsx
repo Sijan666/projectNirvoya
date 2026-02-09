@@ -13,13 +13,13 @@ const Category = () => {
         </h3>
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-[13px]">
           {category.map((item) => (
-            <div key={item.id} className="flex items-center justify-between shadow-newMade rounded-md p-4 bg-white cursor-pointer">
+            <div key={item?.id} className="flex items-center justify-between shadow-newMade rounded-md p-4 bg-white cursor-pointer">
               <div className="flex items-center gap-2">
                 <div className="w-10 h-10 flex items-center justify-center">
-                  <Images imgSrc={item.categoryImage} className={'object-contain'}/>
+                  <Images imgSrc={item?.categoryImage} className={'object-contain'}/>
                 </div>
                 <span className="text-sm font-normal text-[#383838]">
-                  {item.categoryTitle}
+                  {item?.categoryTitle}
                 </span>
               </div>
               <FaAngleRight className="text-[#999999] text-sm shrink-0" />

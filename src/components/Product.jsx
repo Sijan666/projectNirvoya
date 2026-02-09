@@ -18,7 +18,7 @@ const Product = ({
     };
   
   return (
-    <div className="w-full px-1"> 
+    <div className="w-full"> 
       <div className="bg-white p-2.5 border border-[#E9E9E9] rounded-[10px] relative w-full overflow-hidden group">
         {/* image */}
         <div className="w-full overflow-hidden rounded-[5px]">
