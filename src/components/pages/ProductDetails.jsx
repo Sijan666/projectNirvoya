@@ -48,7 +48,7 @@ const ProductDetails = () => {
 
   return (
     <div className="pt-14 pb-12.5 bg-[#FAFAFA] w-[420px] lg:w-full">
-      <Container className={'lg:w-[1405px] w-[395px]'}>
+      <Container className={"lg:w-[1405px] w-[395px]"}>
         <h6 className="flex items-center gap-x-2 lg:text-base text-sm pb-6">
           <span className="text-[#02344F] flex items-center gap-x-2">
             Home <FaAngleRight />
@@ -88,10 +88,18 @@ const ProductDetails = () => {
                 <button className="cursor-pointer">
                   <FaChevronUp className="text-[#949494] text-base mb-3" />
                 </button>
-                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall1} /></button>
-                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall2} /></button>
-                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall3} /></button>
-                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall4} /></button>
+                <button className="cursor-pointer">
+                  <Images imgSrc={productDetailsSmall1} />
+                </button>
+                <button className="cursor-pointer">
+                  <Images imgSrc={productDetailsSmall2} />
+                </button>
+                <button className="cursor-pointer">
+                  <Images imgSrc={productDetailsSmall3} />
+                </button>
+                <button className="cursor-pointer">
+                  <Images imgSrc={productDetailsSmall4} />
+                </button>
                 <button className="cursor-pointer">
                   <FaChevronDown className="text-[#0198E9] text-base mt-3" />
                 </button>
@@ -104,23 +112,23 @@ const ProductDetails = () => {
             </h3>
             <div className="flex-wrap lg:flex gap-y-2 lg:gap-y-0 items-center pb-8">
               <div className="flex items-center">
-                    <h4 className="text-[#333] text-lg font-medium pr-[5px]">
-                    4.0
-                  </h4>
-                  <div className="flex items-center gap-x-[3px] -mt-1">
-                    <IoStarSharp className="text-2xl text-[#FFB340]" />
-                    <IoStarSharp className="text-2xl text-[#FFB340]" />
-                    <IoStarSharp className="text-2xl text-[#FFB340]" />
-                    <IoStarSharp className="text-2xl text-[#FFB340]" />
-                    <IoStarSharp className="text-2xl text-[#A7A7A7]" />
-                  </div>
-                  <span className="text-[#BABABA] text-lg pl-1">(223)</span>
-                  <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
-                  <FaCheck className="text-[#0AC96D] text-xl" />
-                  <div className="text-[#333333] text-lg pl-2.5">
-                    <span className="font-semibold">4,320</span> Sold
-                  </div>
-                  <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
+                <h4 className="text-[#333] text-lg font-medium pr-[5px]">
+                  4.0
+                </h4>
+                <div className="flex items-center gap-x-[3px] -mt-1">
+                  <IoStarSharp className="text-2xl text-[#FFB340]" />
+                  <IoStarSharp className="text-2xl text-[#FFB340]" />
+                  <IoStarSharp className="text-2xl text-[#FFB340]" />
+                  <IoStarSharp className="text-2xl text-[#FFB340]" />
+                  <IoStarSharp className="text-2xl text-[#A7A7A7]" />
+                </div>
+                <span className="text-[#BABABA] text-lg pl-1">(223)</span>
+                <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
+                <FaCheck className="text-[#0AC96D] text-xl" />
+                <div className="text-[#333333] text-lg pl-2.5">
+                  <span className="font-semibold">4,320</span> Sold
+                </div>
+                <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
               </div>
               <Link to={""} className="flex items-center gap-x-3 pt-3 lg:pt-0">
                 <FaHeart className="text-[#C7C7C7] text-[22px]" />
@@ -182,13 +190,19 @@ const ProductDetails = () => {
               <div className="flex items-center gap-x-4 pb-">
                 <h4 className="text-[#3D3D3F] text-sm">Quantity: </h4>
                 <div className="border-2 border-[#EAEAEA] rounded-lg">
-                  <button onClick={handleDecrement} className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
+                  <button
+                    onClick={handleDecrement}
+                    className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]"
+                  >
                     -
                   </button>
                   <span className="text-[#3D3D3F] px-2.5 py-1.5 border-l-2 border-r-2 border-[#EAEAEA] leading-1">
                     {count}
                   </span>
-                  <button onClick={handleIncrement} className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
+                  <button
+                    onClick={handleIncrement}
+                    className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]"
+                  >
                     +
                   </button>
                 </div>
@@ -206,10 +220,16 @@ const ProductDetails = () => {
         </div>
         {/* --------------- */}
         <div className="pt-20">
-          <h4 className="text-[#0198E9] font-medium text-[24px] py-5 bg-[#FCFCFC] px-12 border border-[#F1F1F1]">Producr details of LED Monitor With High Quality In The World</h4>
+          <h4 className="text-[#0198E9] font-medium text-[24px] py-5 bg-[#FCFCFC] px-12 border border-[#F1F1F1]">
+            Producr details of LED Monitor With High Quality In The World
+          </h4>
           <div className="pt-[25px] pb-10 px-12 bg-white">
-            <h4 className="text-[24px] font-bold text-[#333333] pb-[19px]">See the best picture no matter where you sit</h4>
-            <Flex className={'justify-between pb-[35px] border-b border-[#F1F1F1]'}>
+            <h4 className="text-[24px] font-bold text-[#333333] pb-[19px]">
+              See the best picture no matter where you sit
+            </h4>
+            <Flex
+              className={"justify-between pb-[35px] border-b border-[#F1F1F1]"}
+            >
               <ul className="text-[#333333] text-[18px] w-[618px]">
                 <li className="pb-5">Size : M, L, XL</li>
                 <li className="pb-5">Product Type : Jogger</li>
@@ -220,65 +240,128 @@ const ProductDetails = () => {
               </ul>
               <ul className="text-[#333333] text-[18px]">
                 <li className="pb-5">Zipper : Yes</li>
-                <li className="pb-5">Pocket : Two front and One Back Pockets.</li>
+                <li className="pb-5">
+                  Pocket : Two front and One Back Pockets.
+                </li>
                 <li className="pb-5">100% Authentic Product</li>
-                <li className="pb-5">Product color may slightly vary due to our photography and Sometimes it’s vary on our devices</li>
+                <li className="pb-5">
+                  Product color may slightly vary due to our photography and
+                  Sometimes it’s vary on our devices
+                </li>
               </ul>
             </Flex>
             <div className="pt-[25px]">
-              <h4 className="text-[24px] text-[#333333] font-bold">Powerful intelligence for perfection</h4>
-              <p className="pt-[18px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              <p className="pt-[58px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita </p>
+              <h4 className="text-[24px] text-[#333333] font-bold">
+                Powerful intelligence for perfection
+              </h4>
+              <p className="pt-[18px]">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                voluptas nulla pariatur?
+              </p>
+              <p className="pt-[58px]">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                rerum facilis est et expedita{" "}
+              </p>
             </div>
           </div>
         </div>
-        <div className="mt-7.5 pt-7.5 px-12 pb-15 bg-white">
+        <div className="mt-7.5 pt-7.5 pr-15 lg:px-12 pb-15 bg-white">
           {/* ratings part */}
-          <Flex className={'gap-x-[75px] pb-[35px]'}>
+          <Flex
+            className={
+              "flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 lg:gap-x-[75px] pb-[35px]"
+            }
+          >
             <div className="">
-              <h4 className="text-[#3D3D3F] font-medium text-[20px] pb-2.5">Customer reviews</h4>
+              <h4 className="text-[#3D3D3F] font-medium text-[20px] pb-2.5">
+                Customer reviews
+              </h4>
               <div className="flex">
-                <Images imgSrc={Review}/>
+                <Images imgSrc={Review} />
               </div>
             </div>
-            <div className="">
-              <Images imgSrc={ratings}/>
+            <div className="w-[70%] lg:w-full">
+              <Images imgSrc={ratings} />
             </div>
             <div className="">
-              <Button btnText={'Write a Review'} className={'px-12 py-2.5 text-white'}/>
+              <Button
+                btnText={"Write a Review"}
+                className={"px-12 py-2.5 text-white"}
+              />
             </div>
           </Flex>
           {/* ratings part */}
           {/* review part */}
-          <h4 className="text-[#333333] text-[24px] font-medium border-b pb-5 border-[#F1F1F1]">Reviews (4)</h4>
+          <h4 className="text-[#333333] text-[24px] font-medium border-b lg:pb-5 border-[#F1F1F1]">
+            Reviews (4)
+          </h4>
           <div className="pt-5">
-            <div className="flex flex-col gap-y-7.5">
-              <Images imgSrc={r1}/>
-              <Images imgSrc={r2}/>
-              <Images imgSrc={r3}/>
-              <Images imgSrc={r4}/>
+            <div className="flex flex-col gap-y-3 lg:gap-y-7.5">
+              <Images imgSrc={r1} />
+              <Images imgSrc={r2} />
+              <Images imgSrc={r3} />
+              <Images imgSrc={r4} />
             </div>
           </div>
           {/* review part */}
           {/* input part */}
-          <div className="input pt-[70px]">
-            <h4 className="text-[24px] font-semibold text-[#383838]">Add Your Review</h4>
-            <p className="text-[#A7A7A7] text-[18px] pt-4 pb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
-            <div className="name pb-8">
+          <div className="input pt-7 lg:pt-[70px]">
+            <h4 className="text-[24px] font-semibold text-[#383838]">
+              Add Your Review
+            </h4>
+            <p className="text-[#A7A7A7] text-sm lg:text-[18px] lg:pt-4 pb-3 lg:pb-7 w-[300px] lg:w-full">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.{" "}
+            </p>
+            <div className="name pb-3 lg:pb-8">
               <p className="pb-4 text-[18px] text-[#383838]">Name *</p>
-              <input type="text" name="" className="w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5 "/>
+              <input
+                type="text"
+                name=""
+                className="w-[280px] lg:w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5 "
+              />
             </div>
             <div className="email pb-8">
               <p className="pb-4 text-[18px] text-[#383838]">Email *</p>
-              <input type="email" name="" className="w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5 "/>
+              <input
+                type="email"
+                name=""
+                className="w-[280px] lg:w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5 "
+              />
             </div>
-            <div className="msg pb-10">
+            <div className="msg lg:pb-10">
               <p className="pb-4 text-[18px] text-[#383838]">Review *</p>
-              <textarea name="" id="" rows={5} cols={5} className="w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5"></textarea>
+              <textarea
+                name=""
+                id=""
+                rows={5}
+                cols={5}
+                className="w-[280px] lg:w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5"
+              ></textarea>
             </div>
-            <Images imgSrc={rate}/>
+            <Images imgSrc={rate} className={"w-[200px] lg:w-full"} />
             <div className="btn pt-10">
-              <Button btnText={'Submit'} className={'text-[#FAFAFA] text-[18px] px-[57.5px] py-[16.5px]'}/>
+              <Button
+                btnText={"Submit"}
+                className={"text-[#FAFAFA] text-[18px] px-[57.5px] py-[16.5px]"}
+              />
             </div>
           </div>
           {/* input part */}
