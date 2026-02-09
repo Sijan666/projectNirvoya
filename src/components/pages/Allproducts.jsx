@@ -6,12 +6,12 @@ import { Slider } from "@/components/ui/slider"
 import { IoMdStar } from 'react-icons/io'
 import Product from '../Product'
 import { IoStar } from 'react-icons/io5'
-import f7 from '../../assets/f7.png'
-import w4 from '../../assets/w4.png'
-import f6 from '../../assets/f6.png'
-import w2 from '../../assets/w2.png'
-import w3 from '../../assets/w3.png'
-import f12 from '../../assets/f12.png'
+import f7 from '../../assets/f7.webp'
+import w4 from '../../assets/w4.webp'
+import f6 from '../../assets/f6.webp'
+import w2 from '../../assets/w2.webp'
+import w3 from '../../assets/w3.webp'
+import f12 from '../../assets/f12.webp'
 
 
 

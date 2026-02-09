@@ -1,13 +1,13 @@
 import Container from "../Container";
 import Images from "../Images";
-import fLogo from "/src/assets/footerLogo.png";
-import facebook from "/src/assets/fFacebok.png";
-import twitter from "/src/assets/fTwiter.png";
-import linkedin from "/src/assets/fLinkdin.png";
-import insta from "/src/assets/fInsta.png";
-import Headphone from "/src/assets/fHeadPhone.png";
+import fLogo from "/src/assets/footerLogo.webp";
+import facebook from "/src/assets/fFacebok.webp";
+import twitter from "/src/assets/fTwiter.webp";
+import linkedin from "/src/assets/fLinkdin.webp";
+import insta from "/src/assets/fInsta.webp";
+import Headphone from "/src/assets/fHeadPhone.webp";
 import { Link } from "react-router-dom";
-import paymentApps from "/src/assets/fPaymentApps.png";
+import paymentApps from "/src/assets/fPaymentApps.webp";
 
 const Footer = () => {
   return (

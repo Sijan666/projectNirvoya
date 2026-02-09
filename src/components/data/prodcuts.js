@@ -1,7 +1,7 @@
-import women from "/src/assets/women.png";
-import w2 from "/src/assets/w2.png";
-import w3 from "/src/assets/w3.png";
-import w4 from "/src/assets/w4.png";
+import women from "/src/assets/women.webp";
+import w2 from "/src/assets/w2.webp";
+import w3 from "/src/assets/w3.webp";
+import w4 from "/src/assets/w4.webp";
 
 
 export const products = [

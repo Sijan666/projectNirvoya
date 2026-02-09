@@ -4,30 +4,30 @@ import Container from "../Container";
 import Images from "../Images";
 import { FaChevronUp } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
-import productDetailsBig1 from "/src/assets/productDetailsBig1.png";
-import productDetailsSmall1 from "/src/assets/productDetailsSmall1.png";
-import productDetailsSmall2 from "/src/assets/productDetailsSmall2.png";
-import productDetailsSmall3 from "/src/assets/productDetailsSmall3.png";
-import productDetailsSmall4 from "/src/assets/productDetailsSmall4.png";
-import linkedin from "/src/assets/linkedin.png";
-import twitter from "/src/assets/twitter.png";
-import facebook from "/src/assets/facebook.png";
-import whatsapp from "/src/assets/whatsapp.png";
-import link from "/src/assets/link.png";
+import productDetailsBig1 from "/src/assets/productDetailsBig1.webp";
+import productDetailsSmall1 from "/src/assets/productDetailsSmall1.webp";
+import productDetailsSmall2 from "/src/assets/productDetailsSmall2.webp";
+import productDetailsSmall3 from "/src/assets/productDetailsSmall3.webp";
+import productDetailsSmall4 from "/src/assets/productDetailsSmall4.webp";
+import linkedin from "/src/assets/linkedin.webp";
+import twitter from "/src/assets/twitter.webp";
+import facebook from "/src/assets/facebook.webp";
+import whatsapp from "/src/assets/whatsapp.webp";
+import link from "/src/assets/link.webp";
 import { Link } from "react-router-dom";
 import { IoStarSharp } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import Flex from "../Flex";
-import Review from '../../assets/Review.png'
-import ratings from '../../assets/ratings.png'
+import Review from '../../assets/Review.webp'
+import ratings from '../../assets/ratings.webp'
 import Button from "../Button";
-import r1 from '../../assets/r1.png'
-import r2 from '../../assets/r2.png'
-import r3 from '../../assets/r3.png'
-import r4 from '../../assets/r4.png'
-import rate from '../../assets/rate.png'
+import r1 from '../../assets/r1.webp'
+import r2 from '../../assets/r2.webp'
+import r3 from '../../assets/r3.webp'
+import r4 from '../../assets/r4.webp'
+import rate from '../../assets/rate.webp'
 
 
 const ProductDetails = () => {

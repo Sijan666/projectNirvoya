@@ -1,9 +1,9 @@
 import React from "react";
 import Images from "../Images";
-import Footertop1 from "/src/assets/ft1.png";
-import Footertop2 from "/src/assets/ft2.png";
-import Footertop3 from "/src/assets/ft3.png";
-import Footertop4 from "/src/assets/ft4.png";
+import Footertop1 from "/src/assets/ft1.webp";
+import Footertop2 from "/src/assets/ft2.webp";
+import Footertop3 from "/src/assets/ft3.webp";
+import Footertop4 from "/src/assets/ft4.webp";
 import Container from "../Container";
 
 const FooterTop = () => {

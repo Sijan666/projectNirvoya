@@ -1,7 +1,7 @@
 import Container from "../Container";
 import Flex from "../Flex";
 import Images from "../Images";
-import Logo from "/src/assets/logo.png";
+import Logo from "/src/assets/logo.webp";
 import { FiSearch } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
 import { AiOutlineHeart } from "react-icons/ai";
