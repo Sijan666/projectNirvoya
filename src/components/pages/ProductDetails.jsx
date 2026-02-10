@@ -345,7 +345,7 @@ const ProductDetails = () => {
               ></textarea>
             </div>
             <Images imgSrc={rate} className={"w-[200px] "} />
-            <div className="btn pt-10">
+            <div className="btnn pt-10">
               <Button
                 btnText={"Submit"}
                 className={"text-[#FAFAFA] text-[18px] px-[57.5px] py-[16.5px]"}
