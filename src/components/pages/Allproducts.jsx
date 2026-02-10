@@ -6,7 +6,7 @@ import { Slider } from "@/components/ui/slider";
 import { IoMdStar } from "react-icons/io";
 import Product from "../Product";
 import { IoStar } from "react-icons/io5";
-import { allProductOne, allProductTwo } from "../data/featuredProduct";
+import { allProducts } from "../data/featuredProduct";
 
 const Allproducts = () => {
   const [priceRange, setPriceRange] = useState([75]);
@@ -134,100 +134,29 @@ const Allproducts = () => {
                 </Flex>
                 {/* first line start */}
                 <div className="pt-6">
-                  {/* <Flex className={" flex-wrap gap-y-5 justify-between px-2"}> */}
                   {/* product 1*/}
-                  <div className="flex gap-x-6">
-                    {allProductOne?.map((item) => (
-                      <Product
-                        key={item?.id}
-                        className={"w-[48%] lg:w-[33%]"}
-                        productImg={item?.productImage}
-                        badgeText={""}
-                        productRating={
-                          <>
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar className="text-[#D3D3D3]" />
-                          </>
-                        }
-                        productTitle={item?.productTitle}
-                        productPrice={item?.price}
-                      />
+                  <div className="flex flex-wrap gap-y-6 justify-between">
+                    {allProducts?.map((item) => (
+                      <div key={item?.id} className={"w-[48%] lg:w-[32%]"}>
+                        <Product
+                          productImg={item?.productImage}
+                          badgeText={""}
+                          productRating={
+                            <>
+                              <IoStar />
+                              <IoStar />
+                              <IoStar />
+                              <IoStar />
+                              <IoStar className="text-[#D3D3D3]" />
+                            </>
+                          }
+                          productTitle={item?.productTitle}
+                          productPrice={item?.price}
+                        />
+                      </div>
                     ))}
                   </div>
                   {/* product 1*/}
-                  {/* product 2*/}
-                  <div className="flex gap-x-6 my-6">
-                    {allProductTwo?.map((item) => (
-                      <Product
-                        key={item?.id}
-                        className={"w-[48%] lg:w-[33%]"}
-                        productImg={item?.productImage}
-                        badgeText={""}
-                        productRating={
-                          <>
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar className="text-[#D3D3D3]" />
-                          </>
-                        }
-                        productTitle={item?.productTitle}
-                        productPrice={item?.price}
-                      />
-                    ))}
-                  </div>
-                  {/* product 2*/}
-                  {/* product 1*/}
-                  <div className="flex gap-x-6">
-                    {allProductOne?.map((item) => (
-                      <Product
-                        key={item?.id}
-                        className={"w-[48%] lg:w-[33%]"}
-                        productImg={item?.productImage}
-                        badgeText={""}
-                        productRating={
-                          <>
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar className="text-[#D3D3D3]" />
-                          </>
-                        }
-                        productTitle={item?.productTitle}
-                        productPrice={item?.price}
-                      />
-                    ))}
-                  </div>
-                  {/* product 1*/}
-                  {/* product 2*/}
-                  <div className="flex gap-x-6 mt-6">
-                    {allProductTwo?.map((item) => (
-                      <Product
-                        key={item?.id}
-                        className={"w-[48%] lg:w-[33%]"}
-                        productImg={item?.productImage}
-                        badgeText={""}
-                        productRating={
-                          <>
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar />
-                            <IoStar className="text-[#D3D3D3]" />
-                          </>
-                        }
-                        productTitle={item?.productTitle}
-                        productPrice={item?.price}
-                      />
-                    ))}
-                  </div>
-                  {/* product 2*/}
-                  {/* </Flex> */}
                 </div>
                 {/* first line end */}
               </div>

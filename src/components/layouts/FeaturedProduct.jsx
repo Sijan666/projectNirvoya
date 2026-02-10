@@ -5,12 +5,7 @@ import { IoStar } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
-import {
-  featuredProductFor,
-  featuredProductOne,
-  featuredProductThr,
-  featuredProductTwo,
-} from "../data/featuredProduct";
+import { featuredProduct } from "../data/featuredProduct";
 
 const FeaturedProduct = () => {
   return (
@@ -29,96 +24,28 @@ const FeaturedProduct = () => {
           </div>
           {/* Product 1*/}
           <div className="flex flex-wrap gap-y-5 justify-between px-2">
-            {featuredProductOne?.map((item) => (
+            {featuredProduct?.map((item) => (
               <div key={item?.id} className="w-[48%] lg:w-[24%]">
-              <Product
-                productImg={item?.productImage}
-                badgeText={""}
-                productRating={
-                  <div className="flex">
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar className="text-[#D3D3D3]" />
-                  </div>
-                }
-                productTitle={item?.productTitle}
-                productPrice={item?.price}
+                <Product
+                  productImg={item?.productImage}
+                  badgeText={""}
+                  productRating={
+                    <div className="flex">
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar />
+                      <IoStar className="text-[#D3D3D3]" />
+                    </div>
+                  }
+                  productTitle={item?.productTitle}
+                  productPrice={item?.price}
                 />
-                </div>
+              </div>
             ))}
           </div>
           {/* Product 1*/}
-          {/* Product 2*/}
-          <div className="flex gap-x-6 my-6">
-            {featuredProductTwo.map((item) => (
-              <Product
-                key={item?.id}
-                className={"w-[48%] lg:w-[24%]"}
-                productImg={item?.productImage}
-                badgeText={""}
-                productRating={
-                  <div className="flex">
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar className="text-[#D3D3D3]" />
-                  </div>
-                }
-                productTitle={item?.productTitle}
-                productPrice={item?.price}
-              />
-            ))}
-          </div>
-          {/* Product 2*/}
-          {/* Product 3*/}
-          <div className="flex gap-x-6">
-            {featuredProductThr.map((item) => (
-              <Product
-                key={item?.id}
-                className={"w-[48%] lg:w-[24%]"}
-                productImg={item?.productImage}
-                badgeText={""}
-                productRating={
-                  <div className="flex">
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar className="text-[#D3D3D3]" />
-                  </div>
-                }
-                productTitle={item?.productTitle}
-                productPrice={item?.price}
-              />
-            ))}
-          </div>
-          {/* Product 3*/}
-          {/* Product 4*/}
-          <div className="flex gap-x-6 mt-6">
-            {featuredProductFor.map((item) => (
-              <Product
-                key={item?.id}
-                className={"w-[48%] lg:w-[24%]"}
-                productImg={item?.productImage}
-                badgeText={""}
-                productRating={
-                  <div className="flex">
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar className="text-[#D3D3D3]" />
-                  </div>
-                }
-                productTitle={item?.productTitle}
-                productPrice={item?.price}
-              />
-            ))}
-          </div>
-          {/* Product 4*/}
+          {/* Show more Button */}
           <div className="text-center pt-10">
             <Link to={"/allproducts"}>
               <button className="px-6.5 py-[11px] text-white font-semibold text-base rounded-[81px] bg-[#0198E9] cursor-pointer flex gap-x-2 items-center mx-auto hover:bg-sky-600 transition-colors">
@@ -126,6 +53,7 @@ const FeaturedProduct = () => {
               </button>
             </Link>
           </div>
+          {/* Show more Button */}
         </Container>
       </div>
     </>

@@ -14,7 +14,7 @@ import f14 from "../../assets/f14.webp";
 import f15 from "../../assets/f15.webp";
 import f16 from "../../assets/f16.webp";
 
-export const featuredProductOne = [
+export const featuredProduct = [
   {
     id: 1,
     productTitle: "Headrest Executive Mesh Office Chair set",
@@ -39,9 +39,6 @@ export const featuredProductOne = [
     productImage: f4,
     price: "৳1000.00",
   },
-];
-
-export const featuredProductTwo = [
   {
     id: 5,
     productTitle: "Headrest Executive Mesh Office Chair set",
@@ -66,9 +63,6 @@ export const featuredProductTwo = [
     productImage: w4,
     price: "৳1000.00",
   },
-];
-
-export const featuredProductThr = [
   {
     id: 9,
     productTitle: "Headrest Executive Mesh Office Chair set",
@@ -93,36 +87,33 @@ export const featuredProductThr = [
     productImage: f12,
     price: "৳1000.00",
   },
-];
-
-export const featuredProductFor = [
   {
-    id: 1,
+    id: 13,
     productTitle: "Headrest Executive Mesh Office Chair set",
     productImage: f1,
     price: "৳10500",
   },
   {
-    id: 13,
+    id: 14,
     productTitle: "Women fashion dress set",
     productImage: f14,
     price: "৳1000",
   },
   {
-    id: 14,
+    id: 15,
     productTitle: "Headrest Executive Mesh Office Chair set",
     productImage: f15,
     price: "৳5000",
   },
   {
-    id: 15,
+    id: 16,
     productTitle: "Headrest Executive Mesh Office Chair set",
     productImage: f16,
     price: "৳1000.00",
   },
 ];
 
-export const allProductOne = [
+export const allProducts = [
   {
     id: 1,
     productTitle: "Headrest Executive Mesh Office Chair set",
@@ -141,23 +132,21 @@ export const allProductOne = [
     productImage: f6,
     price: "৳1000",
   },
-];
 
-export const allProductTwo = [
   {
-    id: 1,
+    id: 4,
     productTitle: "Women fashion dress set",
     productImage: w2,
     price: "৳1000",
   },
   {
-    id: 2,
+    id: 5,
     productTitle: "Headrest Executive Mesh Office Chair set",
     productImage: w3,
     price: "৳5000",
   },
   {
-    id: 3,
+    id: 6,
     productTitle: "Women black dress and red hat collections",
     productImage: f12,
     price: "৳1000.00",
