@@ -27,13 +27,11 @@ const FeaturedProduct = () => {
               </button>
             </Link>
           </div>
-
           {/* Product 1*/}
-          <div className="flex gap-x-6">
+          <div className="flex flex-wrap gap-y-5 justify-between px-2">
             {featuredProductOne?.map((item) => (
+              <div key={item?.id} className="w-[48%] lg:w-[24%]">
               <Product
-                key={item?.id}
-                className={"w-[48%] lg:w-[24%]"}
                 productImg={item?.productImage}
                 badgeText={""}
                 productRating={
@@ -47,11 +45,11 @@ const FeaturedProduct = () => {
                 }
                 productTitle={item?.productTitle}
                 productPrice={item?.price}
-              />
+                />
+                </div>
             ))}
           </div>
           {/* Product 1*/}
-
           {/* Product 2*/}
           <div className="flex gap-x-6 my-6">
             {featuredProductTwo.map((item) => (
@@ -75,7 +73,6 @@ const FeaturedProduct = () => {
             ))}
           </div>
           {/* Product 2*/}
-
           {/* Product 3*/}
           <div className="flex gap-x-6">
             {featuredProductThr.map((item) => (
@@ -99,7 +96,6 @@ const FeaturedProduct = () => {
             ))}
           </div>
           {/* Product 3*/}
-
           {/* Product 4*/}
           <div className="flex gap-x-6 mt-6">
             {featuredProductFor.map((item) => (
@@ -123,7 +119,6 @@ const FeaturedProduct = () => {
             ))}
           </div>
           {/* Product 4*/}
-
           <div className="text-center pt-10">
             <Link to={"/allproducts"}>
               <button className="px-6.5 py-[11px] text-white font-semibold text-base rounded-[81px] bg-[#0198E9] cursor-pointer flex gap-x-2 items-center mx-auto hover:bg-sky-600 transition-colors">
