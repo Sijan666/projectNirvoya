@@ -152,7 +152,7 @@ const ProductDetails = () => {
                 <span className="text-[#757575] text-base">In Stock</span>
               </div>
             </div>
-            <div className="h-px w-[595px] bg-[#EAEAEA] my-4" />
+            <div className="h-px lg:w-[595px] bg-[#EAEAEA] my-4" />
             <p className="text-[#333333] text-lg leading-7.5 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -278,28 +278,25 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div className="lg:mt-7.5 lg:pt-7.5 pr-15 lg:px-12 pb-15 bg-white">
+        <div className="lg:mt-7.5 py-5 lg:pt-7.5 lg:px-12 bg-white">
           {/* ratings part */}
           <Flex className="flex flex-col lg:flex-row items-center gap-6 pb-[35px]">
-            <div className="w-full lg:w-[17%]">
+            <div className="lg:w-[17%]">
               <h4 className="text-[#3D3D3F] font-medium text-[20px] pb-2.5">
                 Customer reviews
               </h4>
               <Images imgSrc={Review} />
             </div>
-
-            <div className="w-full lg:w-[29%]">
+            <div className=" lg:w-[29%]">
               <Images imgSrc={ratings} />
             </div>
-
-            <div className="w-full lg:w-auto">
+            <div className=" lg:w-auto">
               <Button
                 btnText="Write a Review"
                 className="px-12 py-2.5 text-white"
               />
             </div>
           </Flex>
-
           {/* review part */}
           <h4 className="text-[#333333] text-[24px] font-medium border-b lg:pb-5 border-[#F1F1F1]">
             Reviews (4)
@@ -317,7 +314,7 @@ const ProductDetails = () => {
             <h4 className="text-[24px] font-semibold text-[#383838]">
               Add Your Review
             </h4>
-            <p className="text-[#A7A7A7] text-sm lg:text-[18px] lg:pt-4 pb-3 lg:pb-7 w-[300px] lg:w-full">
+            <p className="text-[#A7A7A7] text-sm lg:text-[18px] lg:pt-4 py-3 lg:pb-7 w-[300px] lg:w-full">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.{" "}
             </p>
