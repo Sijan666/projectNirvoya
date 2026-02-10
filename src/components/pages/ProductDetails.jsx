@@ -20,31 +20,27 @@ import { FaCheck } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import Flex from "../Flex";
-import Review from '../../assets/Review.webp'
-import ratings from '../../assets/ratings.webp'
+import Review from "../../assets/Review.webp";
+import ratings from "../../assets/ratings.webp";
 import Button from "../Button";
-import r1 from '../../assets/r1.webp'
-import r2 from '../../assets/r2.webp'
-import r3 from '../../assets/r3.webp'
-import r4 from '../../assets/r4.webp'
-import rate from '../../assets/rate.webp'
-
+import r1 from "../../assets/r1.webp";
+import r2 from "../../assets/r2.webp";
+import r3 from "../../assets/r3.webp";
+import r4 from "../../assets/r4.webp";
+import rate from "../../assets/rate.webp";
 
 const ProductDetails = () => {
-
   const [count, setCount] = useState(1);
 
   const handleIncrement = () => {
     setCount(count + 1);
   };
-  
+
   const handleDecrement = () => {
     if (count > 1) {
       setCount(count - 1);
     }
   };
-
-
 
   return (
     <div className="pt-14 lg:pb-12.5 bg-[#FAFAFA] w-[420px] lg:w-full">
@@ -284,30 +280,26 @@ const ProductDetails = () => {
         </div>
         <div className="lg:mt-7.5 lg:pt-7.5 pr-15 lg:px-12 pb-15 bg-white">
           {/* ratings part */}
-          <Flex
-            className={
-              "flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 lg:gap-x-[75px] pb-[35px]"
-            }
-          >
-            <div className="">
+          <Flex className="flex flex-col lg:flex-row items-center gap-6 pb-[35px]">
+            <div className="w-full lg:w-[17%]">
               <h4 className="text-[#3D3D3F] font-medium text-[20px] pb-2.5">
                 Customer reviews
               </h4>
-              <div className="flex">
-                <Images imgSrc={Review} />
-              </div>
+              <Images imgSrc={Review} />
             </div>
-            <div className="w-[70%] lg:w-full">
+
+            <div className="w-full lg:w-[29%]">
               <Images imgSrc={ratings} />
             </div>
-            <div className="">
+
+            <div className="w-full lg:w-auto">
               <Button
-                btnText={"Write a Review"}
-                className={"px-12 py-2.5 text-white"}
+                btnText="Write a Review"
+                className="px-12 py-2.5 text-white"
               />
             </div>
           </Flex>
-          {/* ratings part */}
+
           {/* review part */}
           <h4 className="text-[#333333] text-[24px] font-medium border-b lg:pb-5 border-[#F1F1F1]">
             Reviews (4)
@@ -320,7 +312,6 @@ const ProductDetails = () => {
               <Images imgSrc={r4} />
             </div>
           </div>
-          {/* review part */}
           {/* input part */}
           <div className="input pt-7 lg:pt-[70px]">
             <h4 className="text-[24px] font-semibold text-[#383838]">
