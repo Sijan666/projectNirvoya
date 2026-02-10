@@ -219,11 +219,11 @@ const ProductDetails = () => {
           </div>
         </div>
         {/* --------------- */}
-        <div className="pt-20">
+        <div className="lg:pt-20">
           <h4 className="text-[#0198E9] font-medium text-[24px] py-5 bg-[#FCFCFC] px-12 border border-[#F1F1F1]">
             Producr details of LED Monitor With High Quality In The World
           </h4>
-          <div className="pt-[25px] pb-10 px-12 bg-white">
+          <div className="lg:pt-[25px] lg:pb-10 px-12 bg-white">
             <h4 className="text-[24px] font-bold text-[#333333] pb-[19px]">
               See the best picture no matter where you sit
             </h4>
@@ -250,7 +250,7 @@ const ProductDetails = () => {
                 </li>
               </ul>
             </Flex>
-            <div className="pt-[25px]">
+            <div className="lg:pt-[25px]">
               <h4 className="text-[24px] text-[#333333] font-bold">
                 Powerful intelligence for perfection
               </h4>
