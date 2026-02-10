@@ -47,7 +47,7 @@ const ProductDetails = () => {
 
 
   return (
-    <div className="pt-14 pb-12.5 bg-[#FAFAFA] w-[420px] lg:w-full">
+    <div className="pt-14 lg:pb-12.5 bg-[#FAFAFA] w-[420px] lg:w-full">
       <Container className={"lg:w-[1405px] w-[395px]"}>
         <h6 className="flex items-center gap-x-2 lg:text-base text-sm pb-6">
           <span className="text-[#02344F] flex items-center gap-x-2">
@@ -228,7 +228,7 @@ const ProductDetails = () => {
               See the best picture no matter where you sit
             </h4>
             <Flex
-              className={"justify-between pb-[35px] border-b border-[#F1F1F1]"}
+              className={" justify-between pb-[35px] border-b border-[#F1F1F1]"}
             >
               <ul className="text-[#333333] text-[18px] w-[618px]">
                 <li className="pb-5">Size : M, L, XL</li>
@@ -271,7 +271,7 @@ const ProductDetails = () => {
                 molestiae consequatur, vel illum qui dolorem eum fugiat quo
                 voluptas nulla pariatur?
               </p>
-              <p className="pt-[58px]">
+              <p className="pt-4 lg:pt-[58px]">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas molestias excepturi sint occaecati cupiditate
@@ -282,7 +282,7 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div className="mt-7.5 pt-7.5 pr-15 lg:px-12 pb-15 bg-white">
+        <div className="lg:mt-7.5 lg:pt-7.5 pr-15 lg:px-12 pb-15 bg-white">
           {/* ratings part */}
           <Flex
             className={
@@ -356,7 +356,7 @@ const ProductDetails = () => {
                 className="w-[280px] lg:w-[745px] border border-[#A7A7A7]/20 bg-[#FAFAFA] rounded-[5px] outline-none py-5 px-5"
               ></textarea>
             </div>
-            <Images imgSrc={rate} className={"w-[200px] lg:w-full"} />
+            <Images imgSrc={rate} className={"w-[200px] "} />
             <div className="btn pt-10">
               <Button
                 btnText={"Submit"}
