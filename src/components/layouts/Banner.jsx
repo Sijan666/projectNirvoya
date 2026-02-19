@@ -14,11 +14,11 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="pt-3 pb-[50px] w-[420px] lg:w-full">
-      <Container className={'lg:w-[1405px] w-[395px]'}>
-        <Flex className={"lg:justify-between flex-col lg:flex-row gap-y-5"}>
+    <div className="pt-3 pb-[50px] w-full sm:w-full md:w-3xl lg:w-full">
+      <Container className="w-full px-4 sm:px-0 sm:w-[600px] md:w-[720px] lg:w-[1405px]">
+        <Flex className="flex-col md:flex-col lg:flex-row lg:justify-between gap-y-5">
           {/* Left Side: Swiper */}
-          <div className="left lg:w-[65%] w-full">
+          <div className="left w-full sm:w-full md:w-full lg:w-[65%]">
             <Swiper
               slidesPerView={1}
               loop={true}
@@ -61,15 +61,15 @@ const Banner = () => {
           </div>
           {/* Left Side: Swiper */}
           {/* Right Side Images */}
-          <div className="right ">
-            <Flex className="flex-col justify-between h-full gap-y-5">
-              <div className="h-[48%]">
+          <div className="right w-full sm:w-full md:w-full lg:w-[32%]">
+            <Flex className="flex-col sm:flex-row md:flex-row lg:flex-col justify-between h-full gap-y-5 sm:gap-x-5 lg:gap-x-0">
+              <div className="h-auto lg:h-[48%] w-full sm:w-[48%] md:w-[48%] lg:w-full">
                 <Images
                   imgSrc={banner2}
                   className="w-full h-full object-cover rounded-4xl cursor-pointer"
                 />
               </div>
-              <div className="h-[48%]">
+              <div className="h-auto lg:h-[48%] w-full sm:w-[48%] md:w-[48%] lg:w-full">
                 <Images
                   imgSrc={banner3}
                   className="w-full h-full object-cover rounded-4xl cursor-pointer"
