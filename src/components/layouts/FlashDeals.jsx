@@ -9,22 +9,21 @@ import { products } from "/src/components/data/prodcuts";
 
 const FlashDeals = () => {
   return (
-    <div className="pb-12.5 w-[420px] lg:w-full">
-      <Container className={'lg:w-[1405px] w-[395px]'}>
-        
+    <div className="pb-12.5 w-full sm:w-full md:w-full lg:w-full">
+      <Container className={'w-full px-4 sm:px-0 sm:w-[600px] md:w-[720px] lg:w-[1405px]'}>
         {/* Title Section */}
-        <div className="flex justify-between items-center pb-10">
-          <h3 className="text-[26px] font-medium text-[#2E2E2E]">Flash Deals</h3>
+        <div className="flex justify-between items-center pb-8 sm:pb-10">
+          <h3 className="text-[20px] sm:text-[22px] md:text-[26px] font-medium text-[#2E2E2E]">Flash Deals</h3>
           <Link to={'/allproducts'}>
-            <button className="flex items-center gap-x-2 text-[#757575] text-base font-medium cursor-pointer">
+            <button className="flex items-center gap-x-2 text-[#757575] text-sm sm:text-base font-medium cursor-pointer">
               View More <FaArrowRight />
             </button>
           </Link>
         </div>
         {/* Dynamic Product List */}
-        <Flex className={'flex-wrap gap-y-5 justify-between px-2'}>
+        <Flex className={'flex-wrap gap-y-5 justify-between px-0 sm:px-2'}>
           {products?.map((item) => (
-            <div key={item?.id} className="w-[48%] lg:w-[24%]">
+            <div key={item?.id} className="w-[48%] sm:w-[48%] md:w-[31%] lg:w-[24%]">
               <Product
                 productImg={item?.productImg}
                 badgeText={item?.discount}
