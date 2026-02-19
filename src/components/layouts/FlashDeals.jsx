@@ -21,7 +21,6 @@ const FlashDeals = () => {
             </button>
           </Link>
         </div>
-
         {/* Dynamic Product List */}
         <Flex className={'flex-wrap gap-y-5 justify-between px-2'}>
           {products?.map((item) => (
