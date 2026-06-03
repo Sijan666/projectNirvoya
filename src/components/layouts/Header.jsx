@@ -38,15 +38,15 @@ const Header = () => {
           </div>
           {/* Icons */}
           <div className="flex items-center gap-5 sm:gap-6 lg:gap-8 shrink-0">
-            <Link to="/login" className="flex items-center gap-2 text-gray-600 hover:text-[#0198E9] transition-colors group">
+            <Link to="/" className="flex items-center gap-2 text-gray-600 hover:text-[#0198E9] transition-colors group">
               <FaRegUser className="text-xl group-hover:scale-110 duration-300" />
               <span className="hidden lg:block text-sm font-medium">Login</span>
             </Link>
-            <Link to="/wishlist" className="flex items-center gap-2 text-gray-600 hover:text-[#0198E9] transition-colors group">
+            <Link to="/" className="flex items-center gap-2 text-gray-600 hover:text-[#0198E9] transition-colors group">
               <AiOutlineHeart className="text-[26px] group-hover:scale-110 duration-300" />
               <span className="hidden lg:block text-sm font-medium">Wishlist</span>
             </Link>
-            <Link to="/cart" className="flex items-center gap-2 text-gray-600 hover:text-[#0198E9] transition-colors group relative">
+            <Link to="/" className="flex items-center gap-2 text-gray-600 hover:text-[#0198E9] transition-colors group relative">
               <div className="relative">
                 <FaShoppingBasket className="text-[24px] group-hover:scale-110 duration-300" />
                 <span className="absolute -top-2 -right-2 h-5 w-5 rounded-full bg-red-500 text-white text-[11px] font-bold flex items-center justify-center border-2 border-white shadow-sm">
