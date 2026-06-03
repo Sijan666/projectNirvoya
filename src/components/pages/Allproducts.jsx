@@ -15,11 +15,11 @@ const Allproducts = () => {
   return (
     <>
       <section>
-        <div className="bg-[#FAFAFA] pt-[43px] pb-12.5 w-[420px] lg:w-full">
-          <Container className={"lg:w-[1405px] w-[395px]"}>
-            <Flex className={"gap-x-13 items-start!"}>
+        <div className="bg-[#FAFAFA] pt-8 md:pt-[43px] pb-10 md:pb-12.5 w-full">
+          <Container className={"w-full max-w-[1405px] mx-auto px-4 lg:px-0"}>
+            <Flex className={"flex-col lg:flex-row gap-y-8 lg:gap-y-0 lg:gap-x-8 xl:gap-x-13 items-start"}>
               {/* left side start */}
-              <div className="leftBar w-[20%] py-[25px] bg-white px-5 hidden lg:block">
+              <div className="leftBar w-full lg:w-[25%] xl:w-[20%] py-6 lg:py-[25px] bg-white px-5 hidden lg:block shrink-0">
                 <div className="pb-[18px] border-b border-[#F4F4F4]">
                   <h4 className="text-[#3D3D3F] text-[18px] font-medium">
                     Related Categories
@@ -45,7 +45,7 @@ const Allproducts = () => {
                   </div>
                 </div>
                 <div className="pt-5">
-                  <div className="flex justify-between items-center! cursor-pointer pb-8">
+                  <div className="flex justify-between items-center cursor-pointer pb-8">
                     <h4 className="text-[#383838] font-medium text-[18px]">
                       Filter by Price
                     </h4>
@@ -70,7 +70,7 @@ const Allproducts = () => {
                   </div>
                 </div>
                 <div className="pt-5">
-                  <div className="flex justify-between items-center! cursor-pointer pb-8">
+                  <div className="flex justify-between items-center cursor-pointer pb-8">
                     <h4 className="text-[#383838] font-medium text-[18px]">
                       Filter by Rating
                     </h4>
@@ -112,19 +112,19 @@ const Allproducts = () => {
               </div>
               {/* left side end */}
               {/* right side start */}
-              <div className="rightSide w-full">
-                <Flex className="justify-between">
+              <div className="rightSide w-full lg:flex-1">
+                <Flex className="flex-col sm:flex-row justify-between gap-y-4 sm:gap-y-0 items-start sm:items-center">
                   <div className="left">
-                    <h4 className="lg:text-[18px] text-sm text-[#424241]/50 font-medium">
+                    <h4 className="text-sm md:text-base lg:text-[18px] text-[#424241]/50 font-medium">
                       Showing <span className="text-[#424241]"> 20 </span> of{" "}
                       <span className="text-[#424241]">160</span> product
                     </h4>
                   </div>
-                  <div className="right flex lg:gap-x-2 gap-x-1 items-center">
-                    <h4 className="lg:text-[18px] text-sm text-[#424241]/50 font-medium">
+                  <div className="right flex gap-x-2 items-center">
+                    <h4 className="text-sm md:text-base lg:text-[18px] text-[#424241]/50 font-medium whitespace-nowrap">
                       Sort by:
                     </h4>
-                    <select className="px-4 py-1 text-[#424241] border border-[#F0F0F0] outline-none lg:w-40 w-30 appearance-none text-[18px]">
+                    <select className="px-2 sm:px-4 py-1 text-[#424241] border border-[#F0F0F0] outline-none w-28 sm:w-32 lg:w-40 appearance-none text-sm md:text-base lg:text-[18px]">
                       <option value="">Newest Items</option>
                       <option value="">Featured</option>
                       <option value="">Best Sellers</option>
@@ -137,7 +137,7 @@ const Allproducts = () => {
                   {/* product 1*/}
                   <div className="flex flex-wrap gap-y-6 justify-between">
                     {allProducts?.map((item) => (
-                      <div key={item?.id} className={"w-[48%] lg:w-[32%]"}>
+                      <div key={item?.id} className={"w-[48%] md:w-[32%]"}>
                         <Product
                           productImg={item?.productImage}
                           badgeText={""}
