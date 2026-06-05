@@ -283,7 +283,7 @@ const ProductDetails = () => {
                   dolores et quas molestias excepturi sint occaecati cupiditate
                   non provident, similique sunt in culpa qui officia deserunt
                   mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                  rerum facilis est et expedita{" "}
+                  rerum facilis est et expedita.
                 </p>
               </div>
             </div>
@@ -326,7 +326,7 @@ const ProductDetails = () => {
               </h4>
               <p className="text-[#A7A7A7] text-sm lg:text-[18px] lg:pt-4 py-3 lg:pb-7 w-full max-w-xs lg:max-w-none">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.{" "}
+                eiusmod tempor.
               </p>
               <div className="name pb-6 lg:pb-8">
                 <p className="pb-3 md:pb-4 text-base md:text-[18px] text-[#383838]">Name *</p>
