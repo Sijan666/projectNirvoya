@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import Container from "../Container";
 import Flex from "../Flex";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
@@ -14,11 +15,16 @@ const Allproducts = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Products - Project Nirvoya</title>
+        <meta name="description" content="Browse all premium products, categories, and best deals on Project Nirvoya." />
+      </Helmet>
+
       <section>
         <div className="bg-[#FAFAFA] pt-8 md:pt-[43px] pb-10 md:pb-12.5 w-full">
           <Container className={"w-full max-w-[1405px] mx-auto px-4 lg:px-0"}>
             <Flex className={"flex-col lg:flex-row gap-y-8 lg:gap-y-0 lg:gap-x-8 xl:gap-x-13 items-start"}>
-              {/* left side start */}
+              {/* Left side start */}
               <div className="leftBar w-full lg:w-[25%] xl:w-[20%] py-6 lg:py-[25px] bg-white px-5 hidden lg:block shrink-0">
                 <div className="pb-[18px] border-b border-[#F4F4F4]">
                   <h4 className="text-[#3D3D3F] text-[18px] font-medium">
@@ -77,47 +83,25 @@ const Allproducts = () => {
                     <MdOutlineKeyboardArrowDown />
                   </div>
                   <div className="">
-                    <div className="flex gap-x-3 items-center mb-4">
-                      <input type="checkbox" />
-                      <IoMdStar className="text-[#FFB340]" />
-                    </div>
-                    <div className="flex gap-x-3 items-center mb-4">
-                      <input type="checkbox" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                    </div>
-                    <div className="flex gap-x-3 items-center mb-4">
-                      <input type="checkbox" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                    </div>
-                    <div className="flex gap-x-3 items-center mb-4">
-                      <input type="checkbox" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                    </div>
-                    <div className="flex gap-x-3 items-center mb-4">
-                      <input type="checkbox" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                      <IoMdStar className="text-[#FFB340]" />
-                    </div>
+                    {[1, 2, 3, 4, 5].map((rating, index) => (
+                      <div key={index} className="flex gap-x-3 items-center mb-4">
+                        <input type="checkbox" />
+                        {Array.from({ length: rating }).map((_, i) => (
+                          <IoMdStar key={i} className="text-[#FFB340]" />
+                        ))}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
-              {/* left side end */}
-              {/* right side start */}
+              {/* Left side end */}
+              {/* Right side start */}
               <div className="rightSide w-full lg:flex-1">
                 <Flex className="flex-col sm:flex-row justify-between gap-y-4 sm:gap-y-0 items-start sm:items-center">
                   <div className="left">
                     <h4 className="text-sm md:text-base lg:text-[18px] text-[#424241]/50 font-medium">
-                      Showing <span className="text-[#424241]"> 20 </span> of{" "}
-                      <span className="text-[#424241]">160</span> product
+                      Showing <span className="text-[#424241]"> {allProducts?.length || 0} </span> of{" "}
+                      <span className="text-[#424241]">160</span> products
                     </h4>
                   </div>
                   <div className="right flex gap-x-2 items-center">
@@ -125,16 +109,15 @@ const Allproducts = () => {
                       Sort by:
                     </h4>
                     <select className="px-2 sm:px-4 py-1 text-[#424241] border border-[#F0F0F0] outline-none w-28 sm:w-32 lg:w-40 appearance-none text-sm md:text-base lg:text-[18px]">
-                      <option value="">Newest Items</option>
-                      <option value="">Featured</option>
-                      <option value="">Best Sellers</option>
-                      <option value="">Final Offer</option>
+                      <option value="newest">Newest Items</option>
+                      <option value="featured">Featured</option>
+                      <option value="best_sellers">Best Sellers</option>
+                      <option value="final_offer">Final Offer</option>
                     </select>
                   </div>
                 </Flex>
-                {/* first line start */}
+                {/* Products Grid Start */}
                 <div className="pt-6">
-                  {/* product 1*/}
                   <div className="flex flex-wrap gap-y-6 justify-between">
                     {allProducts?.map((item) => (
                       <div key={item?.id} className={"w-[48%] md:w-[32%]"}>
@@ -143,10 +126,10 @@ const Allproducts = () => {
                           badgeText={""}
                           productRating={
                             <>
-                              <IoStar />
-                              <IoStar />
-                              <IoStar />
-                              <IoStar />
+                              <IoStar className="text-[#FFB340]" />
+                              <IoStar className="text-[#FFB340]" />
+                              <IoStar className="text-[#FFB340]" />
+                              <IoStar className="text-[#FFB340]" />
                               <IoStar className="text-[#D3D3D3]" />
                             </>
                           }
@@ -156,11 +139,10 @@ const Allproducts = () => {
                       </div>
                     ))}
                   </div>
-                  {/* product 1*/}
                 </div>
-                {/* first line end */}
+                {/* Products Grid End */}
               </div>
-              {/* right side end */}
+              {/* Right side end */}
             </Flex>
           </Container>
         </div>
