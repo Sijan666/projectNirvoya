@@ -235,9 +235,7 @@ const ProductDetails = () => {
               <h4 className="text-xl md:text-[24px] font-bold text-[#333333] pb-4 md:pb-[19px]">
                 See the best picture no matter where you sit
               </h4>
-              <Flex
-                className={"flex-col md:flex-row justify-between pb-6 md:pb-[35px] border-b border-[#F1F1F1] gap-y-6 md:gap-y-0"}
-              >
+              <Flex className={"flex-col md:flex-row justify-between pb-6 md:pb-[35px] border-b border-[#F1F1F1] gap-y-6 md:gap-y-0"}>
                 <ul className="text-[#333333] text-base md:text-[18px] w-full lg:max-w-[618px]">
                   <li className="pb-3 md:pb-5">Size : M, L, XL</li>
                   <li className="pb-3 md:pb-5">Product Type : Jogger</li>
