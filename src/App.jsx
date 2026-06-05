@@ -9,12 +9,13 @@ const ProductDetails = lazy(() => import('./components/pages/ProductDetails'))
 const Allproducts = lazy(() => import('./components/pages/Allproducts'))
 
 function App () {
-
   const lenisOptions = {
     lerp: 0.05,
-    duration: 1.5,
+    wheelMultiplier: 0.7,
     smoothWheel: true,
-    wheelMultiplier: 1,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+    gestureDirection: 'vertical',
+    smoothTouch: false,
     touchMultiplier: 2,
   }
 
