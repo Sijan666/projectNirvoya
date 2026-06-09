@@ -3,6 +3,7 @@ import React, { Suspense, lazy } from 'react'
 import RootLayouts from './components/layouts/RootLayouts'
 import Loading from './components/Loading'
 import ReactLenis from 'lenis/react'
+import Error from './components/pages/Error'
 
 const Home = lazy(() => import('./components/pages/Home'))
 const ProductDetails = lazy(() => import('./components/pages/ProductDetails'))
@@ -29,6 +30,7 @@ function App () {
               <Route path="/productDetails" element={<ProductDetails/>} />
               <Route path="/allproducts" element={<Allproducts/>} />
             </Route>
+            <Route path="*" element={<Error/>} />
           </Routes>
         </Suspense>
       </ReactLenis>
